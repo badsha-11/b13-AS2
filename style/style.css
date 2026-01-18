@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+html, body{
+    overflow-x: hidden;
+}
+
+/* shyer style */
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.nav-item ul,
+.nav-item .btn{
+    margin-left: auto;
+}
+/* button all */
+.btn{
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 16px;
+    border-radius: 10000px;
+    cursor: pointer;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    background:  linear-gradient(20deg, #F7E93F,#FB09B4,#9100F8);  
+    transition: .5s;
+}
+.btn:hover{
+    transform: scale(1.05);
+}
+/* font */
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/* header */
+header{
+    background: rgba(26, 11, 46, 1);
+    /* padding: 24px 0; */
+}
+.nav-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 18px 7px;
+}
+
+.nav-item h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+.nav-item h2 .grident-color{
+    background: linear-gradient(51deg, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-item ul{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+.nav-item ul li a{
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    color: rgba(255, 255, 255, 1);
+    transition: color 0.3s ease, transform 0.3s ease;
+
+}
+.nav-item ul li a:hover{
+    background: linear-gradient(51deg, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.08);
+}
+
+.nav-item img{
+    display: none;
+    width: 32px;
+    cursor: pointer;
+}
+
+
+
+
+/* responsive mobile */
+@media screen and (max-width:576px) {
+    .nav-item ul,
+    .nav-item .btn{
+        display: none;
+     }
+     .nav-item img{
+        display: block;
+        /* margin-left: auto; */
+        padding-right: 20px;
+        width: 18px;
+        height: 13.5;
+    }
+}
