@@ -431,20 +431,18 @@ header{
 .f-icon{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    padding: 32px 0;
+    place-items: center;
+    padding: 32px 255px;
     /* width: 693px; */
-    margin: 0 auto;
+    
+    
     
     
 }
 .f-icon a{
-    justify-self: center; 
-    align-self: center; 
     font-size: 1rem;
     font-weight: 500;
     color: #FFFFFF;
-    position: relative;
     bottom: 1px;
 }
 /* responsive mobile */
@@ -551,7 +549,7 @@ header{
     .f-icon{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 32px 40px
+    
     
     
     
