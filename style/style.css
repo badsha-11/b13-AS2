@@ -125,7 +125,10 @@ header{
     padding: 18px 7px;
 }
 
-
+.nav-item h2{
+    color: #FFFFFF;
+    font-weight: 900;
+}
 .nav-item h2 .grident-color{
     background: linear-gradient(51deg, #F7E93F, #FB09B4, #9100F8);
     -webkit-background-clip: text;
@@ -160,12 +163,69 @@ header{
 /* <!-- banner-section --> */
 .banner-section{
    width: 100%;
-   min-height: 100vh;
-   background-image: url('../assets/hero-bg.png');
-   background-size: cover;
-   background-position: center;
-
+    min-height: 100vh; 
+    background-image: url("../assets/hero-circle.png"), url("../assets/hero-bg.png");
+    background-size: 250px, cover; 
+    background-position: center 100px, center center;
+    background-repeat: no-repeat, no-repeat;
+    
 }
+.banner-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 130px;
+}
+.banner-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-button button{
+    position: relative;
+    left: 84px;
+    bottom: 192px;
+    border-radius: 1000px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: none;
+    background: #00FF88;
+}
+/* banner button bar */
+.banner-extra-button{
+    display: flex;
+    gap: 8px;
+}
+.banner-item p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+    padding-top: 80px;
+    padding-bottom: 24px;
+}
+.banner-extra-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-extra-button .btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.banner-extra-button .btn-2{
+    background: none;
+    border: 1px solid #00FF88;
+    border-radius: 10000px;
+    padding: 12px 20px;
+    color: #00FF88;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
     /*  about section*/
 .about{
     background: #1A0B2E;
@@ -177,6 +237,7 @@ header{
 .contant-titel{
     
     border-bottom: 1px solid #ffffff1a;
+    padding: 0 10px;
 }
 .contant-titel h2{
     font-size: 3rem;
@@ -224,9 +285,27 @@ header{
         height: 13.5;
     }
     .banner-section{
-        background-position: top center;
-        
+        min-height: auto; 
+        padding-top: 60px; 
+        padding-bottom: 40px;
+        background-size: 110px, cover; 
+        background-position: center 57px, center; 
+   }
+   .banner-img{
+    position: relative;
+    bottom: 120px;
+    
+}
+    .banner-img img {
+    height: 80px;
     }
+    .banner-button button {
+    position: relative;
+    left: 59px;
+    bottom: 214px;
+    padding: 4px 8px;
+     }
+   
 
     /* about */
 
@@ -234,7 +313,13 @@ header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-}
+     }
+     .contant-titel p{
+    padding-right: 10px;
+     }
+
+
+     /* Choose-Section-card */
     .Choose-Section-card{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -244,5 +329,6 @@ header{
     .container {
     
     padding: 0px 10px;
-}
+    }
+    
 }
