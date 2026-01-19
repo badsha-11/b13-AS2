@@ -15,6 +15,11 @@ html, body{
     margin: 0 auto;
     padding: 0 20px;
 }
+.heading-titell{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
 .nav-item ul,
 .nav-item .btn{
     margin-left: auto;
@@ -43,6 +48,70 @@ html, body{
   font-style: normal;
 }
 
+/* Why-Choose-Section */
+
+.Why-Choose-Section{
+    background: #230E3D;
+    padding: 120px 0;
+}
+.Choose-Section{
+    
+}
+.Choose-Section .heading-titell{
+    text-align: center;
+    padding-bottom: 40px;
+    
+}
+.Choose-Section-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    
+    
+}
+
+.c-s-card:nth-child(1) {
+  grid-row: span 2;              
+}
+.c-s-card:nth-child(2){
+    grid-column: span 2;
+}
+.c-s-card:nth-child(3){
+    grid-column: span 2;
+}
+.c-s-card:nth-child(4) {
+  grid-column: span 2;           
+}
+.c-s-card{
+    border-radius: 40px;
+    background: rgba(53, 17, 101, 0.4);
+    padding: 40px;
+    color: rgba(255, 255, 255, 1);
+    transition: .3s;
+}
+.c-s-card:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 26px #00000046;
+}
+.c-s-card img{
+    transition: .3s;
+}
+.c-s-card:hover img{
+    transform: rotate(3deg) scale(1.05);
+}
+.c-s-card h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+}
+.c-s-card p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
 /* header */
 header{
     background: rgba(26, 11, 46, 1);
@@ -56,11 +125,7 @@ header{
     padding: 18px 7px;
 }
 
-.nav-item h2{
-    font-size: 2rem;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 1);
-}
+
 .nav-item h2 .grident-color{
     background: linear-gradient(51deg, #F7E93F, #FB09B4, #9100F8);
     -webkit-background-clip: text;
@@ -170,5 +235,14 @@ header{
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
 }
+    .Choose-Section-card{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+     
+    }
+    .container {
     
+    padding: 0px 10px;
+}
 }
